@@ -48,7 +48,7 @@ public class DeleteEmployeeMethods extends FetchEmployeeMethods {
 		while (sc.hasNextLine()) {
 			String[] str = sc.nextLine().split(" ");
 
-			if (!str[0].equals(name)) {
+			if (!str[0].equalsIgnoreCase(name) ||!str[6].equalsIgnoreCase(name)){
 				flag = 1;
 				for (String y : str) {
 					fw.write(y);
