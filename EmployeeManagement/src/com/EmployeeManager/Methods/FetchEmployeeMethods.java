@@ -49,7 +49,7 @@ public class FetchEmployeeMethods extends FetchFromFile {
 		while (sc.hasNextLine()) {
 			String[] str = sc.nextLine().split(" ");
 
-			if (str[0].equalsIgnoreCase(name)) {
+			if (!str[0].equalsIgnoreCase(name) ||!str[6].equalsIgnoreCase(name)) {
 				flag = 1;
 				for (String y : str) {
 					System.out.println(y);
