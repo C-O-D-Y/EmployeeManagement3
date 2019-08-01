@@ -33,9 +33,16 @@ public class DeleteEmployeeMethods extends FetchEmployeeMethods {
 	public void delete() throws IOException {
 
 		while (sc.hasNextLine()) {
+			String[] str = sc.nextLine().split(" ");
+
+				for (String y : str) {
+				}
+				System.out.println("==*==*==*==*==*==*==*==*==*==*==");
+				fw.close();
+				rewrite.rename();
+			}
 			System.out.println("all Records deleted");
 		}
-	}
 
 	public void delete(String name) throws IOException {
 		while (sc.hasNextLine()) {
